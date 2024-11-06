@@ -1,5 +1,7 @@
 # JWT Auth and Drizzle with PostgreSQL
-1. `npm run dev`
-2. `docker compose up`
-3. `npm run db:push`
-4. add test user with drizzle studio; `npm run db:studio`
+1. Replace SESSION_SECRET in .env with output from `openssl rand -hex 32`
+2. `npm run dev`
+3. `docker compose up`
+4. `npm run db:push`
+5. add test user in drizzle studio (`npm run db:studio`)
+
