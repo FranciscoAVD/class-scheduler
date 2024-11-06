@@ -40,7 +40,6 @@ export async function createSession(userId: string,){
         expires: expiresAt,
     })
 }
-export async function getSession() {
-
+export async function deleteSession() {
+  cookies().delete(env.SESSION_NAME)
 }
-export async function deleteSession() {}

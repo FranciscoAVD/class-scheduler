@@ -1,7 +1,7 @@
 "use server";
 
 import { getUser } from "@/db/users";
-import { createSession } from "@/server/auth/session";
+import { createSession, deleteSession } from "@/server/auth/session";
 import { redirect } from "next/navigation";
 import { loginSchema } from "./types";
 
@@ -28,4 +28,7 @@ export async function login(formData: FormData):Promise<{
       redirect("/dashboard")
     }
   }
-  export async function logout() {}
+export async function logout() {
+  await deleteSession();
+  redirect("/login")
+}
