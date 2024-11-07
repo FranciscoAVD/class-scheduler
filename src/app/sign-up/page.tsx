@@ -32,7 +32,7 @@ export default function SignUpPage() {
           <input
             id="password"
             name="password"
-            type="text"
+            type="password"
             className="rounded bg-neutral-200 h-9 text-neutral-950 px-2"
           />
         </div>
@@ -41,7 +41,7 @@ export default function SignUpPage() {
           <input
             id="confirm-password"
             name="confirm-password"
-            type="text"
+            type="password"
             className="rounded bg-neutral-200 h-9 text-neutral-950 px-2"
           />
         </div>

@@ -18,7 +18,7 @@ export default function SigninPage() {
         </div>
         <div className="flex flex-col gap-y-1">
           <label htmlFor="password">password</label>
-          <input id="password" name="password" type="text" className="rounded bg-neutral-200 h-9 text-neutral-950 px-2" />
+          <input id="password" name="password" type="password" className="rounded bg-neutral-200 h-9 text-neutral-950 px-2" />
         </div>
         <button className="h-10 rounded px-3 py-1 border border-neutral-500 w-full mt-4 hover:bg-neutral-800">Login</button>
         <p className='mt-4 text-neutral-500 text-sm'>Don't have an account? <Link href="/sign-up" className='text-neutral-100'>Sign up</Link></p>
