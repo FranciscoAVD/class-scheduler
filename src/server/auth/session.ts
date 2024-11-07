@@ -1,9 +1,6 @@
 import { SignJWT, jwtVerify } from "jose";
 import { env } from "@/env";
-import { loginSchema } from "@/lib/types";
-import { getUser } from "@/db/users";
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 
 const encodedKey = new TextEncoder().encode(env.SESSION_SECRET);
 
@@ -11,7 +8,6 @@ type SessionPayload = {
   userId: string;
   expiresAt: Date;
 };
-
 
 export async function encrypt(payload: SessionPayload) {
   return new SignJWT(payload)
