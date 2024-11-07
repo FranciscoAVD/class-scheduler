@@ -5,3 +5,6 @@
 4. `npm run db:push`
 5. add test user in drizzle studio (`npm run db:studio`)
 
+### TODO
+- Password hashing
+- update expiration on cookie on valid requests in the middleware
